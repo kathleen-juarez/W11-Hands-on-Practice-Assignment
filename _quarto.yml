@@ -1,0 +1,28 @@
+project:
+  type: website
+
+website:
+  title: "Hands-on Practice on Sharing Outputs with the Audience"
+  navbar:
+    background: "#6a81a5"
+    left:
+      - href: index.qmd
+        text: Home
+      - href: shiny-app.qmd
+        text: Shiny App Essay
+      - href: Quarto-Dashboard.qmd
+        text: Quarto Dashboard
+      - href: Shiny-live.qmd
+        text: Shiny Live
+        
+        
+        
+    
+format:
+  html:
+    theme:
+      - minty
+    toc: false
+
+editor: visual
+
