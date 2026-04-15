@@ -10,7 +10,7 @@ website:
         text: Home
       - href: shiny-app.qmd
         text: Shiny App Essay
-      - href: Quarto-Dashboard.qmd
+      - href: CEP_dashboard.qmd
         text: Quarto Dashboard
       - href: Shiny-live.qmd
         text: Shiny Live

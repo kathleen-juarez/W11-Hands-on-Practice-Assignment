@@ -1,45 +1,61 @@
 ---
-title: "resume-Kathleen"
+title: "Interactive Shiny App"
+format: html
+editor: visual
 ---
 
-# Professional Summary
+## <https://kathleen-juarez.github.io/CEP-dashboard/CEP_dashboard.html>
 
-Results-oriented marketing and analytics professional with a strong foundation in data analysis, digital strategy, and performance reporting. Skilled in leveraging analytics tools and programming languages to uncover insights and support decision-making across cross-functional teams.
+<https://kathleen-juarez.github.io/CEP-dashboard/shiny-app.html>
 
-# Technical Skills
+``` r
+#install.packages("shiny")
+#install.packages("shinydashboard")
+#install.packages("plotly")
+#install.packages("DT")
 
--   **Programming Languages:** R, Python, SQL, etc.\
--   **Web Technologies:** HTML, CSS/SCSS, JavaScript, Quarto, CMS Platforms, Analytics Tools
+library("tidyverse")
+library("shiny")
+library("shinydashboard")
+library("plotly")
+library("DT")
+```
 
-# Education
+## Shiny App Template
 
-| Degree | Year | College / Department | Institution |
-|----|----|----|----|
-| \[Your Degree\] | \[Start – Graduation Year\] | \[Your College or Department\] | \[Your University\] |
-| \[Previous Degree or Certification\] | \[Start – End Year\] | \[Your College or Department\] | \[Your University\] |
+```{r}
+library(shiny)
 
-# Work Experience
+# Define UI for application that draws a histogram
+ui <- fluidPage(
 
-### \[Job Title\], \[Company or Organization\]
+    
+# Define server logic required to draw a histogram
+server <- function(input, output) {
+  
+# Run the application 
+shinyApp(ui = ui, server = server)
 
-*\[Start Date – End Date\]*
+```
 
--   \[Responsibility or accomplishment #1\]\
--   \[Responsibility or accomplishment #2\]\
--   \[Responsibility or accomplishment #3\]\
--   \[Technical tools, collaboration, or outcomes\]\
--   \[Any metrics, impacts, or stakeholder involvement\]
+## Page layout functions
 
-------------------------------------------------------------------------
+fluidPage()
 
-### \[Job Title\], \[Company or Organization\]
+fixedPage()
 
-*\[Start Date – End Date\]*
+navbarPage()
 
--   \[Responsibility or accomplishment #1\]\
--   \[Responsibility or accomplishment #2\]\
--   \[Team leadership, training, or development\]\
--   \[Projects involving marketing, data, or web technologies\]\
--   \[Toolset used or strategies implemented\]
+fillPage()
 
-------------------------------------------------------------------------
+# Layout Org Functions
+
+-help arrange UI elements in the page
+
+sidebarLayout()
+
+vertical Layout()
+
+splitLayout()
+
+flowLayout()
