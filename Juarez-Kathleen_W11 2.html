@@ -3880,7 +3880,6 @@ vertical-align: -.125em;
    
   <ul>
   <li><a href="#website" id="toc-website" class="nav-link active" data-scroll-target="#website">Website:</a></li>
-  <li><a href="#github-repository" id="toc-github-repository" class="nav-link" data-scroll-target="#github-repository">Github Repository:</a></li>
   </ul>
 </nav>
     </div>
@@ -3920,11 +3919,7 @@ vertical-align: -.125em;
 
 <section id="website" class="level1">
 <h1>Website:</h1>
-<p><a href="https://kathleen-juarez.github.io/W11-Hands-on-Practice-Assignment/" class="uri">https://kathleen-juarez.github.io/W11-Hands-on-Practice-Assignment-/</a></p>
-</section>
-<section id="github-repository" class="level1">
-<h1>Github Repository:</h1>
-<p><a href="https://github.com/kathleen-juarez/W11-Hands-on-Practice-Assignment-">https://github.com/kathleen-juarez/W11-Hands-on-Practice-Assignment</a></p>
+<p><a href="https://kathleen-juarez.github.io/W11-Hands-on-Practice-Assignment-/" class="uri">https://kathleen-juarez.github.io/W11-Hands-on-Practice-Assignment-/</a></p>
 
 
 </section>
@@ -4003,7 +3998,7 @@ vertical-align: -.125em;
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/kathleen-juarez\.github\.io\/W11-Hands-on-Practice-Assignment-\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
