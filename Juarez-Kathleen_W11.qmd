@@ -1,0 +1,17 @@
+---
+title: "W11-Hands-on Practice Assignment"
+author: "Kathleen Juarez"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-expand: true
+    embed-resources: true
+    theme: cosmo
+    code-fold: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
